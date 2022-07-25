@@ -50,7 +50,7 @@ router.get('/',(req,res)=>{
     })
 })
 
-router.get('/1',(req,res)=>{
+router.get('/1aa',(req,res)=>{
     beautySchema.find()
         .then((result)=>{
             res.send(result)
