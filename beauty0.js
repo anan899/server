@@ -50,6 +50,15 @@ router.get('/',(req,res)=>{
     })
 })
 
+router.get('/1aa',(req,res)=>{
+    beautySchema.find()
+        .then((result)=>{
+            res.send(result)
+        }).catch((error)=>{
+            console.log(error);
+    })
+})
+
 // get Single beauty by her Name
 /*router.get('/:Name',(req,res)=>{
     const found = BeautyData.some(beauty=>beauty.Name === req.params.Name);
